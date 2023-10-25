@@ -1,3 +1,3 @@
 export default function AppWrapper() {
-  return <div>hi</div>;
+  return <div></div>;
 }

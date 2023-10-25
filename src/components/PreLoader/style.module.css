@@ -1,0 +1,45 @@
+.preloader {
+  margin: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw - 30px);
+  height: calc(100vh - 30px);
+  background: #20202a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.preloader .preloader_content {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.preloader .preloader_content .preloader_load {
+  margin-top: 5px;
+  width: 200px;
+}
+
+.preloader .preloader_content .preloader_load .progressbar-text {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400 !important;
+  color: #8c8c8e !important;
+  height: 300px;
+  line-height: 350px;
+}
+
+.preloader_load path:first-child {
+  stroke: #191923;
+}
+
+.preloader_load path:last-child {
+  stroke: #ffc107;
+}
