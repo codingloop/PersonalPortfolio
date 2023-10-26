@@ -26,20 +26,3 @@
   margin-top: 5px;
   width: 200px;
 }
-
-.preloader .preloader_content .preloader_load .progressbar-text {
-  position: relative;
-  font-size: 14px;
-  font-weight: 400 !important;
-  color: #8c8c8e !important;
-  height: 300px;
-  line-height: 350px;
-}
-
-.preloader_load path:first-child {
-  stroke: #191923;
-}
-
-.preloader_load path:last-child {
-  stroke: #ffc107;
-}

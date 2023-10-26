@@ -2,7 +2,11 @@ import LinearProgressBar from "@/components/LinearProgressBar";
 import style from "./style.module.css";
 import { useEffect, useState } from "react";
 
-export default function PreLoader({ userFullName, progressBarColor }) {
+export default function PreLoader({
+  userFullName,
+  progressBarColor,
+  onComplete,
+}) {
   const [progress, setProgress] = useState("0%");
   useEffect(() => {
     completeProgress();
@@ -15,6 +19,7 @@ export default function PreLoader({ userFullName, progressBarColor }) {
     function increaseProgress() {
       if (width >= 100) {
         clearInterval(id);
+        onComplete();
       } else {
         width += 1;
         setProgress(`${width}%`);
