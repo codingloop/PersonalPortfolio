@@ -26,6 +26,10 @@ module.exports = {
       colors: {
         custom1: "#1e1e28",
         custom2: "#20202a",
+        custom3: "#fafafc",
+      },
+      fontSize: {
+        "11px": "11px",
       },
       boxShadow: {
         shadow1: "0 3px 8px 0 rgba(15, 15, 20, 0.2)",

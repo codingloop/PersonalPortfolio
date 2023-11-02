@@ -9,6 +9,7 @@ export default function InfoBar() {
     <div className={style.infobar}>
       <div className="py-0 px-[15px]">
         <InfoBarHeader />
+        <Header />
         {/* <Header />
         <ScrollFrame />
         <Social /> */}

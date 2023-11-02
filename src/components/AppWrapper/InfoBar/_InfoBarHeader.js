@@ -7,7 +7,6 @@ export default function InfoBarHeader() {
     <div className={style.infobarheader}>
       <div className={style.infobarheaderbtn}>
         <FontAwesomeIcon icon={faEllipsisV} />
-        <i class="fas fa-ellipsis-v"></i>
       </div>
     </div>
   );
