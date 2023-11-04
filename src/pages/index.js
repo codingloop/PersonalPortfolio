@@ -9,10 +9,15 @@ export default function Home() {
   const [showPreLoader, setShowPreLoader] = useState(true);
 
   return (
-    <div className="main_app">
+    <div className="main_app mw920:p-0">
       <AppHeader />
+
       <MobileTopBar />
-      <AppWrapper />
+      <AppWrapper
+        userFullName={PFInfo.user_full_name}
+        designations={PFInfo.designations}
+        socialMeadiaList={PFInfo.social_media_list}
+      />
 
       {showPreLoader && (
         <PreLoader

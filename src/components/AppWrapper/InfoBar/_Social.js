@@ -1,3 +1,17 @@
-export default function Social() {
-  return <div>hi</div>;
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import style from "./style.module.css";
+import { iconsConfig } from "@/config/socialIcons";
+
+export default function Social({ socialMeadiaList }) {
+  return (
+    <div className={style.social_container}>
+      {socialMeadiaList?.map((socialMedia, index) => {
+        return (
+          <a href={socialMedia?.link} key={`social_icon_${index}`}>
+            <FontAwesomeIcon icon={iconsConfig[socialMedia?.icon]} />
+          </a>
+        );
+      })}
+    </div>
+  );
 }

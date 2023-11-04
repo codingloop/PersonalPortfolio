@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./style.module.css";
 import { faExpand } from "@fortawesome/free-solid-svg-icons";
 
-export default function Header() {
+export default function Header({ userFullName, designations }) {
   return (
     <div className={style.header}>
       <div className={style.avatar}>
@@ -14,9 +14,11 @@ export default function Header() {
           <div className={style.available_lamp}></div>
         </div>
       </div>
-      <h5 className="text-custom3 transition">Ishwar Bhat</h5>
+      <h5 className="text-custom3 transition">{userFullName}</h5>
       <div className="text-11px">
-        Senior Software Engineer, <br /> AWS Solutions Architect
+        {designations?.map((designation, index) => (
+          <div key={`designation_${index}`}>{designation}</div>
+        ))}
       </div>
     </div>
   );
