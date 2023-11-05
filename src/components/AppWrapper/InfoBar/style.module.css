@@ -161,6 +161,14 @@
 }
 
 /* Secion 3 */
+.scroll_frame {
+  width: 100%;
+  height: calc(100vh - 30px);
+  display: block;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
 
 /* Section 4 */
 .social_container {
@@ -219,5 +227,9 @@
     transform: translateX(70px);
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
+  }
+
+  .scroll_frame {
+    height: 100vh;
   }
 }

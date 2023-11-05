@@ -1,3 +1,5 @@
+import style from "./style.module.css";
+
 export default function ScrollFrame() {
-  return <div>hi</div>;
+  return <div className={style.scroll_frame}>hi</div>;
 }

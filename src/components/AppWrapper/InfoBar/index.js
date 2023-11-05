@@ -21,10 +21,8 @@ export default function InfoBar({
       <div className="py-0 px-[15px]">
         <InfoBarHeader setShowLeftMenu={setShowLeftMenu} />
         <Header userFullName={userFullName} designations={designations} />
-        <Social socialMeadiaList={socialMeadiaList} />
-        {/* <Header />
         <ScrollFrame />
-        <Social /> */}
+        <Social socialMeadiaList={socialMeadiaList} />
       </div>
     </div>
   );
