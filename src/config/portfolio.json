@@ -1,10 +1,14 @@
 {
   "user_full_name": "Ishwar Bhat",
   "designations": ["Senior Software Engineer", "AWS Solutions Architect"],
+  "personalInfo": [
+    { "name": "Age", "value": "28" },
+    { "name": "City", "value": "Bangalore" }
+  ],
   "social_media_list": [
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "linkedin" },
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "github" },
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "twitter" }
   ],
-  "progress_bar_color": "#ffc107"
+  "progressBarColor": "#ffc107"
 }

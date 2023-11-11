@@ -27,6 +27,9 @@ module.exports = {
         custom1: "#1e1e28",
         custom2: "#20202a",
         custom3: "#fafafc",
+        custom4: "#8c8c8e",
+        custom5: "#646466",
+        mainyellow: "#ffc107",
       },
       fontSize: {
         "11px": "11px",

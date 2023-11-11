@@ -22,7 +22,7 @@ export default function Home() {
       {showPreLoader && (
         <PreLoader
           userFullName={PFInfo.user_full_name}
-          progressBarColor={PFInfo.progress_bar_color}
+          progressBarColor={PFInfo.progressBarColor}
           onComplete={() => setShowPreLoader(false)}
         />
       )}

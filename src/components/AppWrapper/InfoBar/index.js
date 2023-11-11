@@ -18,7 +18,7 @@ export default function InfoBar({
 
   return (
     <div className={mainClassName}>
-      <div className="py-0 px-[15px]">
+      <div className="py-0 px-15px">
         <InfoBarHeader setShowLeftMenu={setShowLeftMenu} />
         <Header userFullName={userFullName} designations={designations} />
         <ScrollFrame />
