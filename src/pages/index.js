@@ -13,11 +13,13 @@ export default function Home() {
       <AppHeader />
 
       <MobileTopBar />
-      <AppWrapper
-        userFullName={PFInfo.user_full_name}
-        designations={PFInfo.designations}
-        socialMeadiaList={PFInfo.social_media_list}
-      />
+      {!showPreLoader && (
+        <AppWrapper
+          userFullName={PFInfo.user_full_name}
+          designations={PFInfo.designations}
+          socialMeadiaList={PFInfo.social_media_list}
+        />
+      )}
 
       {showPreLoader && (
         <PreLoader

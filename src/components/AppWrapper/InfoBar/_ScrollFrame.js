@@ -18,13 +18,18 @@ const PersonalInfo = ({ personalInfo }) => (
 );
 
 const Languages = ({ languages, stroke, background }) => {
+  console.log(languages);
   return (
     <div className={style.scroll_content_languages}>
-      <CircularProgressBar
-        progress="90%"
-        stroke={stroke}
-        backgroundColor={background}
-      />
+      {languages?.map((language, ind) => (
+        <CircularProgressBar
+          key={`language_${ind}`}
+          progress={language.percent}
+          stroke={stroke}
+          backgroundColor={background}
+          progressName={language.name}
+        />
+      ))}
     </div>
   );
 };
@@ -38,7 +43,7 @@ export default function ScrollFrame() {
         <PersonalInfo personalInfo={userContext?.personalInfo} />
         <Divider />
         <Languages
-          languages={useContext?.languages}
+          languages={userContext?.languages}
           stroke={userContext.progressBarColor}
           background="#1e1e28"
         />

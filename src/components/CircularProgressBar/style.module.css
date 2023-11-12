@@ -1,7 +1,7 @@
 .circular_progress {
   --bgColor: white;
   --stroke: pink;
-  --progress: 0;
+  --progressPercent: 0;
 }
 
 @property --progress-value {
@@ -12,7 +12,7 @@
 
 @keyframes circle-progress {
   to {
-    --progress-value: var(--progress);
+    --progress-value: calc(var(--progressPercent));
   }
 }
 
@@ -32,5 +32,5 @@
       var(--stroke) calc(var(--progress-value) * 1%),
       var(--bgColor) 0
     );
-  animation: circle-progress 10s 1 forwards;
+  animation: circle-progress 2s 1 forwards;
 }

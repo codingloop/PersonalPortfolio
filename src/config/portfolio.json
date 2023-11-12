@@ -5,6 +5,11 @@
     { "name": "Age", "value": "28" },
     { "name": "City", "value": "Bangalore" }
   ],
+  "languages": [
+    { "name": "ಕನ್ನಡ", "percent": "100" },
+    { "name": "English", "percent": "99" },
+    { "name": "Hindi", "percent": "90" }
+  ],
   "social_media_list": [
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "linkedin" },
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "github" },
