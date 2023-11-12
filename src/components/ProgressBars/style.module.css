@@ -1,0 +1,46 @@
+/* skill.js */
+.skill_progress_container {
+  --progressPercent: 0;
+  --background: white;
+}
+
+@property --progress-value {
+  syntax: "<integer>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@keyframes animate-progress {
+  to {
+    --progress-value: calc(var(--progressPercent));
+  }
+}
+
+.progress_bar {
+  height: 4px;
+  background-color: var(--background);
+  width: calc(var(--progress-value) * 1%);
+}
+
+.animate {
+  animation: animate-progress 2s 1 forwards ease;
+}
+
+.progress_bar:after {
+  position: absolute;
+  text-align: right;
+  top: -25px;
+  right: 0;
+  font-size: 11px;
+  color: #8c8c8e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  counter-reset: progressCount var(--progress-value);
+  content: counter(progressCount) " %";
+}
+
+.animate:after {
+  animation: animate-progress 2s 1 forwards ease;
+}
+/* End skill.js */

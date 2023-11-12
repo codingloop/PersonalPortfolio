@@ -10,6 +10,14 @@
     { "name": "English", "percent": "99" },
     { "name": "Hindi", "percent": "90" }
   ],
+  "coreSkills": [
+    { "name": "Python", "percent": "95" },
+    { "name": "Django", "percent": "90" },
+    { "name": "Javascript", "percent": "90" },
+    { "name": "AWS", "percent": "85" },
+    { "name": "React", "percent": "85" },
+    { "name": "PostgreSQL", "percent": "80" }
+  ],
   "social_media_list": [
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "linkedin" },
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "github" },

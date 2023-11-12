@@ -2,7 +2,8 @@ import { useContext } from "react";
 import style from "./style.module.css";
 import { UserContext } from "@/providers/userInfo";
 import Divider from "@/components/Divider";
-import CircularProgressBar from "@/components/CircularProgressBar";
+import CircularProgress from "@/components/ProgressBars/circular";
+import SkillProgress from "@/components/ProgressBars/skill";
 
 const PersonalInfo = ({ personalInfo }) => (
   <div className="pt-15px pb-15px text-custom4">
@@ -18,21 +19,57 @@ const PersonalInfo = ({ personalInfo }) => (
 );
 
 const Languages = ({ languages, stroke, background }) => {
-  console.log(languages);
   return (
     <div className={style.scroll_content_languages}>
       {languages?.map((language, ind) => (
-        <CircularProgressBar
-          key={`language_${ind}`}
-          progress={language.percent}
-          stroke={stroke}
-          backgroundColor={background}
-          progressName={language.name}
-        />
+        <div key={`language_${ind}`} className="w-[50px] h-[80px]">
+          <CircularProgress
+            progress={language.percent}
+            range={{ from: 0, to: 100 }}
+            sign={{ value: "%", position: "end" }}
+            showMiniCircle={false}
+            showValue={true}
+            sx={{
+              strokeColor: stroke,
+              barWidth: 7,
+              bgStrokeColor: background,
+              bgColor: { value: "#000000", transparency: "20" },
+              shape: "full",
+              strokeLinecap: "round",
+              valueSize: 23,
+              valueWeight: "bold",
+              valueColor: "white",
+              valueFamily: "Trebuchet MS",
+              textSize: 13,
+              textWeight: "bold",
+              textColor: "#000000",
+              textFamily: "Trebuchet MS",
+              loadingTime: 1000,
+              miniCircleColor: "#ff0000",
+              miniCircleSize: 1,
+              valueAnimation: true,
+              intersectionEnabled: true,
+            }}
+          />
+          <h6 className="text-center mt-2">{language.name}</h6>
+        </div>
       ))}
     </div>
   );
 };
+
+const CoreSkills = ({ coreSkills, stroke }) => (
+  <div className="py-[15px]">
+    {coreSkills?.map((skill, ind) => (
+      <div key={`skill_${ind}`} className="mb-[17px] relative">
+        <div className={style.scroll_content_skill_item_heading}>
+          <h6>{skill.name}</h6>
+        </div>
+        <SkillProgress progress={skill.percent} stroke={stroke} />
+      </div>
+    ))}
+  </div>
+);
 
 export default function ScrollFrame() {
   const userContext = useContext(UserContext);
@@ -45,8 +82,14 @@ export default function ScrollFrame() {
         <Languages
           languages={userContext?.languages}
           stroke={userContext.progressBarColor}
-          background="#1e1e28"
+          background="#000"
         />
+        <Divider />
+        <CoreSkills
+          coreSkills={userContext?.coreSkills}
+          stroke={userContext.progressBarColor}
+        />
+        <Divider />
       </div>
     </div>
   );
