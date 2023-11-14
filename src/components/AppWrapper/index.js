@@ -15,7 +15,7 @@ export default function AppWrapper({
           designations={designations}
           socialMeadiaList={socialMeadiaList}
         />
-        {/* <Content /> */}
+        <Content />
         {/* <MenuBar /> */}
       </div>
     </div>

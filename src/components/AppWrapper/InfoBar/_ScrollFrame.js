@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import style from "./style.module.css";
-import { UserContext } from "@/providers/userInfo";
+import { UserContext } from "@/utils/providers/userInfo";
 import Divider from "@/components/Divider";
 import CircularProgress from "@/components/ProgressBars/circular";
 import SkillProgress from "@/components/ProgressBars/skill";

@@ -16,6 +16,7 @@
     { "name": "Django", "percent": "90" },
     { "name": "Javascript", "percent": "90" },
     { "name": "React", "percent": "85" },
+    { "name": "Flutter", "percent": "70" },
     { "name": "PostgreSQL", "percent": "80" }
   ],
   "knowledgeItems": [
@@ -31,5 +32,14 @@
     { "link": "https://github.com/codingloop", "icon": "github" },
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "twitter" }
   ],
+  "banner": {
+    "title": "Discover my Amazing Tech Skills!",
+    "rotatingText": [
+      "design and develop web applications.",
+      "setup cloud infrastructure.",
+      "build automation systems.",
+      "develop android applications in flutter."
+    ]
+  },
   "progressBarColor": "#ffc107"
 }
