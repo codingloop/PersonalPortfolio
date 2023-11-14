@@ -26,7 +26,7 @@ function Header() {
                   &lt;/<i>code</i>&gt;
                 </div>
               </div>
-              <img src="/images/face-1.png" className={style.banner_photo} />
+              {/* <img src="/images/face-1.png" className={style.banner_photo} /> */}
               {/* Place your overlay image here if you want */}
             </div>
           </div>
