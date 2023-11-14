@@ -7,7 +7,11 @@ export default function Social({ socialMeadiaList }) {
     <div className={style.social_container}>
       {socialMeadiaList?.map((socialMedia, index) => {
         return (
-          <a href={socialMedia?.link} key={`social_icon_${index}`}>
+          <a
+            href={socialMedia?.link}
+            key={`social_icon_${index}`}
+            target="_blank"
+          >
             <FontAwesomeIcon icon={iconsConfig[socialMedia?.icon]} />
           </a>
         );

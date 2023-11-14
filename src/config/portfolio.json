@@ -12,15 +12,23 @@
   ],
   "coreSkills": [
     { "name": "Python", "percent": "95" },
+    { "name": "AWS", "percent": "85" },
     { "name": "Django", "percent": "90" },
     { "name": "Javascript", "percent": "90" },
-    { "name": "AWS", "percent": "85" },
     { "name": "React", "percent": "85" },
     { "name": "PostgreSQL", "percent": "80" }
   ],
+  "knowledgeItems": [
+    "System Design",
+    "Web Development",
+    "CI/CD Pipelines",
+    "Android app development",
+    "GIT knowledge",
+    "HTML, CSS, Tailwind CSS"
+  ],
   "social_media_list": [
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "linkedin" },
-    { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "github" },
+    { "link": "https://github.com/codingloop", "icon": "github" },
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "twitter" }
   ],
   "progressBarColor": "#ffc107"

@@ -4,6 +4,8 @@ import { UserContext } from "@/providers/userInfo";
 import Divider from "@/components/Divider";
 import CircularProgress from "@/components/ProgressBars/circular";
 import SkillProgress from "@/components/ProgressBars/skill";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck, faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const PersonalInfo = ({ personalInfo }) => (
   <div className="pt-15px pb-15px text-custom4">
@@ -71,6 +73,33 @@ const CoreSkills = ({ coreSkills, stroke }) => (
   </div>
 );
 
+const KnowldgeItems = ({ items, stroke }) => (
+  <ul className="p-0 pt-15px mt-0 pb-[12px]">
+    {items.map((item, ind) => (
+      <li key={`knowledge_${ind}`} className="list-none mb-[5px] text-custom4">
+        <FontAwesomeIcon
+          icon={faCheck}
+          color={stroke}
+          style={{ fontWeight: "800100" }}
+        />
+        <span className="ml-1">{item}</span>
+      </li>
+    ))}
+  </ul>
+);
+
+const ProfileDownload = () => (
+  <div className={style.scroll_frame_cv_download}>
+    <a
+      href="/resume.pdf"
+      target="_blank"
+      className="uppercase tracking-wider font-bold text-[10px]"
+    >
+      Download CV <FontAwesomeIcon icon={faDownload} />
+    </a>
+  </div>
+);
+
 export default function ScrollFrame() {
   const userContext = useContext(UserContext);
 
@@ -90,6 +119,12 @@ export default function ScrollFrame() {
           stroke={userContext.progressBarColor}
         />
         <Divider />
+        <KnowldgeItems
+          items={userContext?.knowledgeItems}
+          stroke={userContext.progressBarColor}
+        />
+        <Divider />
+        <ProfileDownload />
       </div>
     </div>
   );

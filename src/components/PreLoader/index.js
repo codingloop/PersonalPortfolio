@@ -28,7 +28,7 @@ export default function PreLoader({
   };
 
   return (
-    <div className={style.preloader}>
+    <div className={`${style.preloader}`}>
       <div className={style.preloader_content}>
         <h4>{userFullName}</h4>
         <div className={style.preloader_load}>

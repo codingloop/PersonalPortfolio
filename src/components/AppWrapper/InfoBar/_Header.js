@@ -6,8 +6,8 @@ export default function Header({ userFullName, designations }) {
   return (
     <div className={style.header}>
       <div className={style.avatar}>
-        <a href="/images/face-1.jpg">
-          <img src="/images/face-1.jpg" />
+        <a href="/images/face-1.png">
+          <img src="/images/face-1.png" />
           <FontAwesomeIcon icon={faExpand} />
         </a>
         <div className={style.lamp_light}>
