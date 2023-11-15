@@ -1,4 +1,5 @@
 import Header from "./_Header";
+import Summary from "./_Summary";
 import style from "./style.module.css";
 
 export default function Content() {
@@ -12,6 +13,7 @@ export default function Content() {
         <div className={style.content_scrollframe}>
           <div className={style.scroll_content}>
             <Header />
+            <Summary />
           </div>
         </div>
       </div>
