@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: calc(100vw - 30px);
-  height: calc(100vh - 30px);
+  height: calc(100svh - 30px);
   background: #20202a;
   z-index: 999999;
   display: -webkit-box;

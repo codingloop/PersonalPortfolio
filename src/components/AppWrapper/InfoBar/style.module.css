@@ -274,7 +274,7 @@
     position: absolute;
     left: -290px;
     width: 290px;
-    height: 100vh;
+    height: 100svh;
   }
 
   .infobarheader {
@@ -291,6 +291,6 @@
   }
 
   .scroll_frame {
-    height: 100vh;
+    height: 100svh;
   }
 }
