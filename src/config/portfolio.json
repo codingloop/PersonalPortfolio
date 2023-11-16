@@ -41,5 +41,11 @@
       "develop android applications in flutter."
     ]
   },
+  "summary": [
+    { "heading": "6 +", "value": "Years of Experience" },
+    { "heading": "5 +", "value": "Years of AWS Experience" },
+    { "heading": "5 +", "value": "Years of Python Experience" },
+    { "heading": "30 +", "value": "Completed Projects" }
+  ],
   "progressBarColor": "#ffc107"
 }
