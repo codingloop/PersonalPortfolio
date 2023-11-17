@@ -1,5 +1,5 @@
 {
-  "user_full_name": "Ishwar Bhat",
+  "userFullName": "Ishwar Bhat",
   "designations": ["Senior Software Engineer", "AWS Solutions Architect"],
   "personalInfo": [
     { "name": "Age", "value": "28" },
@@ -27,7 +27,7 @@
     "GIT knowledge",
     "HTML, CSS, Tailwind CSS"
   ],
-  "social_media_list": [
+  "socialMeadiaList": [
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "linkedin" },
     { "link": "https://github.com/codingloop", "icon": "github" },
     { "link": "https://www.linkedin.com/in/ishwar-bhat/", "icon": "twitter" }
@@ -47,5 +47,40 @@
     { "heading": "5 +", "value": "Years of Python Experience" },
     { "heading": "30 +", "value": "Completed Projects" }
   ],
+  "expertise": {
+    "title": "My Expertise",
+    "items": [
+      {
+        "title": "Web Development",
+        "link": "#",
+        "linkName": "Visit Now",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
+      },
+      {
+        "title": "Web Development",
+        "link": "",
+        "linkName": "",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
+      },
+      {
+        "title": "Web Development",
+        "link": "",
+        "linkName": "",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
+      },
+      {
+        "title": "Web Development",
+        "link": "",
+        "linkName": "",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
+      },
+      {
+        "title": "Web Development",
+        "link": "",
+        "linkName": "",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
+      }
+    ]
+  },
   "progressBarColor": "#ffc107"
 }

@@ -3,7 +3,6 @@ import AppHeader from "@/components/AppHeader";
 import AppWrapper from "@/components/AppWrapper";
 import MobileTopBar from "@/components/MobileTopBar";
 import PreLoader from "@/components/PreLoader";
-import PFInfo from "@/config/portfolio.json";
 
 export default function Home() {
   const [showPreLoader, setShowPreLoader] = useState(true);
@@ -17,20 +16,12 @@ export default function Home() {
       {!showPreLoader && (
         <React.Fragment>
           <MobileTopBar />
-          <AppWrapper
-            userFullName={PFInfo.user_full_name}
-            designations={PFInfo.designations}
-            socialMeadiaList={PFInfo.social_media_list}
-          />
+          <AppWrapper />
         </React.Fragment>
       )}
 
       {showPreLoader && (
-        <PreLoader
-          userFullName={PFInfo.user_full_name}
-          progressBarColor={PFInfo.progressBarColor}
-          onComplete={() => setShowPreLoader(false)}
-        />
+        <PreLoader onComplete={() => setShowPreLoader(false)} />
       )}
     </div>
   );

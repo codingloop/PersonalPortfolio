@@ -1,7 +1,5 @@
-import { useContext } from "react";
 import Container from "./_Container";
 import style from "./style.module.css";
-import { UserContext } from "@/utils/providers/userInfo";
 
 const SummaryCard = ({ item }) => (
   <div className={style.col_t2}>
@@ -14,18 +12,13 @@ const SummaryCard = ({ item }) => (
   </div>
 );
 
-function Summary() {
-  const userInfo = useContext(UserContext);
+function Summary({ summary }) {
   return (
     <Container>
       <div className={`${style.row} pt-[30px] pb-0`}>
-        {userInfo.summary?.map((item, ind) => (
+        {summary?.map((item, ind) => (
           <SummaryCard key={`si_${ind}`} item={item} />
         ))}
-        <SummaryCard />
-        <SummaryCard />
-        <SummaryCard />
-        <SummaryCard />
       </div>
     </Container>
   );

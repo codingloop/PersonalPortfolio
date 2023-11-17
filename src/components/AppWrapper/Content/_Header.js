@@ -1,12 +1,9 @@
-import { useContext } from "react";
 import Container from "./_Container";
 import style from "./style.module.css";
-import { UserContext } from "@/utils/providers/userInfo";
 import useTextTypeEffect from "@/utils/hooks/textType";
 
-function Header() {
-  const userContext = useContext(UserContext);
-  const codeText = useTextTypeEffect(userContext?.banner?.rotatingText);
+function Header({ banner }) {
+  const codeText = useTextTypeEffect(banner?.rotatingText);
 
   return (
     <Container>
@@ -19,7 +16,7 @@ function Header() {
             <div className="banner-dec not-sure-why-this-is-there"></div>
             <div className={style.banner_overlay}>
               <div className={style.banner_title}>
-                <h1>{userContext?.banner?.title}</h1>
+                <h1>{banner?.title}</h1>
                 <div className={style.banner_code}>
                   &lt;<i>code</i>&gt; I{" "}
                   <span className="border-r border-[#838282]">{codeText} </span>
