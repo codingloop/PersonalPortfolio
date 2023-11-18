@@ -9,18 +9,20 @@ export default function Content({ showLeftMenu, setShowLeftMenu }) {
   const userInfo = useContext(UserContext);
   const contentRef = useRef();
 
-  const closeLeftMenu = () => setShowLeftMenu(false);
-  useEffect(() => {
-    if (contentRef) {
-      console.log("set event listner");
-      contentRef.current.addEventListener("onClick", closeLeftMenu);
-      return () => {
-        contentRef.current.removeEventListener("onClick", closeLeftMenu);
-      };
-    }
-  }, [showLeftMenu]);
+  const closeLeftMenu = () => {
+    setShowLeftMenu(false);
+  };
 
-  useEffect(() => {}, [contentRef]);
+  useEffect(() => {
+    if (contentRef && contentRef.current && showLeftMenu) {
+      contentRef.current.addEventListener("click", closeLeftMenu);
+    }
+    return () => {
+      if (contentRef && contentRef.current) {
+        contentRef.current.removeEventListener("click", closeLeftMenu);
+      }
+    };
+  }, [contentRef, showLeftMenu]);
 
   return (
     <div className={style.content} ref={contentRef}>

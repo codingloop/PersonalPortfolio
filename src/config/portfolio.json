@@ -52,32 +52,38 @@
     "items": [
       {
         "title": "Web Development",
-        "link": "#",
-        "linkName": "Visit Now",
+        "subtitle": "Great Kahlali",
+        "imageLink": "/images/face-1.png",
+        "action": {
+          "type": "show-rating",
+          "rating": 5
+        },
         "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
       },
       {
         "title": "Web Development",
-        "link": "",
-        "linkName": "",
+        "action": {
+          "type": "link",
+          "link": "#",
+          "linkName": "Click it"
+        },
         "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
       },
       {
         "title": "Web Development",
-        "link": "",
-        "linkName": "",
+        "action": {
+          "type": "link",
+          "link": "#",
+          "linkName": "Click it"
+        },
         "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
       },
       {
         "title": "Web Development",
-        "link": "",
-        "linkName": "",
         "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
       },
       {
         "title": "Web Development",
-        "link": "",
-        "linkName": "",
         "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
       }
     ]

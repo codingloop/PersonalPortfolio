@@ -14,13 +14,7 @@ function CardsContainer({ content }) {
           </div>
         </div>
         {content?.items?.map((item, index) => (
-          <Card
-            key={`card_item_${index}`}
-            title={item?.title}
-            link={item?.link}
-            linkName={item?.linkName}
-            details={item?.details}
-          />
+          <Card key={`card_item_${index}`} item={item} />
         ))}
       </div>
     </Container>
