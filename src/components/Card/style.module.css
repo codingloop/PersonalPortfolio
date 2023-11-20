@@ -55,6 +55,19 @@
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 }
 
+.card_rating {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
 @media (min-width: 768px) {
   .card {
     -ms-flex: 0 0 50%;

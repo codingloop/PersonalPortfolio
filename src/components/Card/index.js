@@ -1,3 +1,4 @@
+import CardAction from "./_Action";
 import style from "./style.module.css";
 
 export default function Card({ item }) {
@@ -21,15 +22,7 @@ export default function Card({ item }) {
           )}
           <div className="mt-1">{item?.details}</div>
 
-          {item?.action && item?.action == "link" && <div>asd</div>}
-
-          {item?.link && (
-            <div className="pt-15px">
-              <a href={link} className={style.card_link}>
-                {linkName}
-              </a>
-            </div>
-          )}
+          <CardAction action={item?.action} />
         </div>
       </div>
     </div>
