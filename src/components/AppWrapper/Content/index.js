@@ -4,6 +4,7 @@ import Header from "./_Header";
 import Summary from "./_Summary";
 import style from "./style.module.css";
 import { UserContext } from "@/utils/providers/userInfo";
+import Footer from "./_Footer";
 
 export default function Content({ showLeftMenu, setShowLeftMenu }) {
   const userInfo = useContext(UserContext);
@@ -36,6 +37,8 @@ export default function Content({ showLeftMenu, setShowLeftMenu }) {
             <Header banner={userInfo?.banner} />
             <Summary summary={userInfo?.summary} />
             <CardsContainer content={userInfo?.expertise} />
+            <CardsContainer content={userInfo?.recommendations} />
+            <Footer />
           </div>
         </div>
       </div>

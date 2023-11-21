@@ -13,10 +13,22 @@ export default function CardAction({ action }) {
       </div>
     );
   } else if (action?.type == "show-rating") {
+    const colorStars = action.rating;
+    const emptyStars = 5 - action.rating;
+
     return (
       <div className={style.card_rating}>
         <ul>
-          <FontAwesomeIcon icon={faStar} />
+          {[...Array(colorStars)].map((item, index) => (
+            <li key={`rating_${index}`}>
+              <FontAwesomeIcon icon={faStar} className="text-mainyellow" />
+            </li>
+          ))}
+          {[...Array(emptyStars)].map((item, index) => (
+            <li key={`rating_${index}`}>
+              <FontAwesomeIcon icon={faStar} className="text-custom6" />
+            </li>
+          ))}
         </ul>
       </div>
     );

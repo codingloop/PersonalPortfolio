@@ -20,6 +20,7 @@
     { "name": "PostgreSQL", "percent": "80" }
   ],
   "knowledgeItems": [
+    "Tech Lead",
     "System Design",
     "Web Development",
     "CI/CD Pipelines",
@@ -52,39 +53,38 @@
     "items": [
       {
         "title": "Web Development",
-        "subtitle": "Great Kahlali",
+        "details": "Design and develop web applications with python, django, javascript and react. Also deploy in various clouds like AWS, digital ocean or any linux machines."
+      },
+      {
+        "title": "CI/CD pipelines",
+        "details": "Implementation continues integration and delivery for the projects by setting up pipelines. Create pielines in AWS through codepipeline or deploying applications through github actions."
+      },
+      {
+        "title": "Monitoring",
+        "details": "Setting up monitoring for infrastructure, track application health. Creating alerts and alarms on infrastructure failure / overload. Alerts for errors and application failures or any critical events."
+      },
+      {
+        "title": "Automation",
+        "details": "Process automation, automate daily activities, implement automated health checkups. Also setting up automated error reporting, handling event triggers (scheduled/unscheduled)."
+      },
+      {
+        "title": "App Development",
+        "details": "Deign and develop android applications using flutter and integrating them with google firebase. Using firestore and firebase authentication and storing user data in firebase."
+      }
+    ]
+  },
+  "recommendations": {
+    "title": "Recommendation",
+    "items": [
+      {
+        "title": "Sanket Vyapari",
+        "subtitle": "Senior software Engineer",
         "imageLink": "/images/face-1.png",
         "action": {
           "type": "show-rating",
           "rating": 5
         },
-        "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
-      },
-      {
-        "title": "Web Development",
-        "action": {
-          "type": "link",
-          "link": "#",
-          "linkName": "Click it"
-        },
-        "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
-      },
-      {
-        "title": "Web Development",
-        "action": {
-          "type": "link",
-          "link": "#",
-          "linkName": "Click it"
-        },
-        "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
-      },
-      {
-        "title": "Web Development",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
-      },
-      {
-        "title": "Web Development",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipisicingelit. Delectus esse commodi deserunt vitae, veroquasi! Veniam quaerat tenetur pariatur doloribus."
+        "details": "Have a solid foundation in web development, demonstrating proficiency in key technologies such as AWS, Python, Django, PostgreSQL, JavaScript, and React. Will be able to architect and implement scalable solutions in a cloud environment, particularly on AWS with services like EC2, S3, Lambda, and RDS, has significantly contributed to the success of multiple projects."
       }
     ]
   },
