@@ -195,6 +195,7 @@
 
 /* Section 2 */
 .col_t2 {
+  align-self: center;
   position: relative;
   width: 100%;
   padding-right: 15px;
