@@ -5,7 +5,7 @@ import MobileTopBar from "@/components/MobileTopBar";
 import PreLoader from "@/components/PreLoader";
 
 export default function Home() {
-  const [showPreLoader, setShowPreLoader] = useState(true);
+  const [showPreLoader, setShowPreLoader] = useState(false);
 
   const rootHeight = showPreLoader ? "100vh" : "100%";
 
@@ -13,16 +13,14 @@ export default function Home() {
     <div className="main_app mw920:p-0" style={{ height: rootHeight }}>
       <AppHeader />
 
-      {!showPreLoader && (
-        <React.Fragment>
-          <MobileTopBar />
-          <AppWrapper />
-        </React.Fragment>
-      )}
+      <React.Fragment>
+        <MobileTopBar />
+        <AppWrapper />
+      </React.Fragment>
 
-      {showPreLoader && (
+      {/* {showPreLoader && (
         <PreLoader onComplete={() => setShowPreLoader(false)} />
-      )}
+      )} */}
     </div>
   );
 }
