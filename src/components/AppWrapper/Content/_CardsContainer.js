@@ -7,7 +7,7 @@ function CardsContainer({ content }) {
     <Container>
       <div className={style.row}>
         <div className={style.col_t1}>
-          <div className={`${style.card_container_title}`}>
+          <div className={`${style.container_title}`}>
             <div className="mb-[30px] relative self-center">
               <h4>{content?.title}</h4>
             </div>

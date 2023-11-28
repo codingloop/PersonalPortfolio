@@ -5,6 +5,7 @@ import Summary from "./_Summary";
 import style from "./style.module.css";
 import { UserContext } from "@/utils/providers/userInfo";
 import Footer from "./_Footer";
+import Contact from "./_Contact";
 
 export default function Content({ showLeftMenu, setShowLeftMenu }) {
   const userInfo = useContext(UserContext);
@@ -38,6 +39,7 @@ export default function Content({ showLeftMenu, setShowLeftMenu }) {
             <Summary summary={userInfo?.summary} />
             <CardsContainer content={userInfo?.expertise} />
             <CardsContainer content={userInfo?.recommendations} />
+            <Contact />
             <Footer />
           </div>
         </div>
