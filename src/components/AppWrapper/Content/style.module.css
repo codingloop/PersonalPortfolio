@@ -232,6 +232,7 @@
   padding: 30px;
   margin-bottom: 30px;
   margin-left: 15px;
+  margin-right: 15px;
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
   -webkit-transform: scale(1);
@@ -335,6 +336,14 @@
 /* End Section  Contact me */
 
 /* Section Footer */
+.footer_container {
+  overflow: hidden;
+  padding: 0 30px;
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
 .footer {
   width: 100%;
   padding: 17px 30px 7px;
@@ -369,6 +378,7 @@
 
   .contact_div {
     margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -387,6 +397,11 @@
   .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .footer_container {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .banner_overlay {
